@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: rgba(255, 250, 249, 0.623);
+}
+
+.members-count,
+.members-list,
+.messages {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.messages {
+  flex-shrink: 1;
+  overflow: auto;
+}
+
+.message {
+  padding: 5px 10px;
+}
+.message .member {
+  display: inline-block;
+}
+
+.member {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.message-form {
+  display: flex;
+  flex-shrink: 0;
+}
+.message-form__input {
+  flex-grow: 1;
+  border: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  font-size: 17px;
+}
+.message-form__button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 215, 225);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+}
+.message-form__button:hover {background-color: rgba(255, 99, 71, 0.781)}
+
+.message-form__button:active {
+  background-color: tomato;
+  box-shadow: 0 0px #666;
+  transform: translateY(2px);
+}
+
+.roomTitle{
+    text-align: center;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

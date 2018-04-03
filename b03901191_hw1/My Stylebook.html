@@ -1,0 +1,97 @@
+<html class="gr__w3schools_com"><head><title> My Stylebook </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../b03901191_hw1/hw1CSS.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+/*blue dalishi: https://www.roomit.nl/media/catalog/product/cache/1/configurator_image/740x/17f82f742ffe127f42dca9de82fb58b1/7/3/73196-3.jpg*/
+/*dummy model: https://heartbeatuk.com/storage/uploads/201710/30-170249_Female-Mannequin-Slanted-Pose-HBO-ABI60.jpg */
+/*Pointer Bear: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJ1giqXw5hxoQ-y-7kHJR2dtBf_4MyYY13mhzl1Rohzow6vSI */
+
+/*---------------------------------Class Definition Done----------------------------------*/
+</style>
+
+<link rel="icon" href="../b03901191_hw1/pics/hanger.png">
+</head><body data-gr-c-s-loaded="true">
+<div class="bgimg w3-display-container">
+  <div class="w3-display-bottommiddle w3-jumbo">
+    <p>Wear what?</p>
+  </div>
+  <div class="w3-display-middle w3-container w3-xxlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-block w3-pale-red">Start</button></p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    
+    <p>Designed by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"> Aqua Fu </a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="my-modal" style="display: none;">
+    <div class="my-modal-content my-animate-opacity">
+        <div class="w3-container w3-blue-gray w3-display-container w3-xlarge">
+        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-right w3-xlarge">Leave</span>
+        <h1>My Outfit</h1>
+    </div>
+    
+    <!-- Main Page-->
+    <div class="w3-display-container bdimg" style="position:relative;">
+        <figure>
+        <img src="../b03901191_hw1/pics/betakkuma.png" id="imgBear"></img>
+        <img src="../b03901191_hw1/pics/head.png" id="bearhead"></img>
+        <img src="../b03901191_hw1/pics/longskirt.png" id= "skirtimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/shorts.png" id = "shortsimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/tshirt.png" id = "tshirtimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/Jersey.png" id = "jerseyimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/beixin.png" id = "beixinimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/sweater.png" id = "sweaterimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/minisk.png" id = "miniskimg" style="display:none"></img>
+        <img src="../b03901191_hw1/pics/bikini.png" id = "bikiniimg" style="display:none"></img>
+        </figure>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white my-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:6;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>CHOOSE</br>YOUR OUTFIT</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-text-grey w3-white" id="myBtn" onchange="clickpic()">
+                TOPS <i class="fa fa-caret-down"></i></a>
+            <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic1()" id="bt1">T-Shirts</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic5()" id="bt5">Tank top</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic6()" id="bt6">Sweater</a>
+            </div>
+        <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-text-grey w3-white" id="myBtn2">
+            PANTS & SKIRTS <i class="fa fa-caret-down"></i></a>
+            <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic2()" id="bt2">Shorts</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic3()" id="bt3">Long skirts</a>
+                <a href="#" class="w3-bar-item w3-button" onclick="clickpic7()" id="bt7">Mini skirts</a>
+            </div>
+        <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-text-grey w3-white" id="myBtn3">
+            OTHERS <i class="fa fa-caret-down"></i></a>
+            <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button" text-align:"left" onclick="clickpic4()" id="bt4">Jersey</a>
+                <a href="#" class="w3-bar-item w3-button" text-align:"left" onclick="clickpic8()" id="bt8">Bikini</a>
+            </div>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" id="dress">COMING SOON</a>
+    </nav>
+  
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-blue-gray w3-xlarge w3-padding-16" style="z-index:5;">
+        <span class="w3-left w3-padding">Outfit of the day</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-blue-gray" onclick="bar_open()">☰</a>
+    </header>
+    </div>
+</div>
+
+<script src="../b03901191_hw1/hw1JS.js"></script>
+    
+</body></html>
