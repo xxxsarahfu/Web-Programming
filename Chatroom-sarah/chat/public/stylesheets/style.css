@@ -1,0 +1,78 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+.contentmsg {
+  display: inline-block;
+  border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  padding: 15px 20px;
+}
+
+.text-gray {
+  color: gray;
+}
+.message-container {
+  display: inline-block;
+  right: 20px;
+  width: 100%;
+  /* border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em; */
+  /* color: black; */
+}
+
+.bg-mymsg {
+  background-color: #00b7ff;
+  color: white;
+}
+.msglist-group-item {
+  display: block;
+  /* border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em; */
+  color: black;
+}
+
+.message-from-other {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.message-from-me {
+  padding-right: 25px;
+  text-align: right;
+}
+
+.message-from-other span {
+  display: inline-block;
+  border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  border: 1px solid rgba(71, 69, 69, 0.1);
+  padding: 0 15px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.message-from-me span {
+  display: inline-block;
+  border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  padding: 0 15px;
+  color: white;
+  background-color: #0084ff;
+}

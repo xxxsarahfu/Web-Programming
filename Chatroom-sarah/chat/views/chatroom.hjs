@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Chatroom</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+  <h1 class="text-center" style="color:palevioletred">Chatroom</h1>
+  <!--pannel-->
+  <div class="container-fluid" style="padding-left:30px">
+    <div class="row">
+      <div class="col-sm-4 col-md-3 col-lg-3">
+        <!--add friend button start-->
+        <div class="row">
+          <div class="input-group">
+            <input type="text" class="form-control" name="groupName">
+            <span class="input-group-btn">
+              <button class="btn btn-info" type="button" id="add-friend-btn">Add</button>
+              <button class="btn btn-warning" type="button" id="add-group-btn">Group</button>
+            </span>
+          </div>
+        </div>
+        <!--add friend button end-->
+        <div class="row">
+          <div class="list-group friend-list">
+            {{#groups}}
+            <a href="#" class="list-group-item friend-item">
+              <form role="form" method="POST">
+                <h2 class="name">{{.}}</h2>
+              </form>
+            </a>
+            {{/groups}}
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-8 col-md-9 col-lg-9">
+        <div class="container-fluid">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading text-center">
+              <h3>{{to}}</h3>
+            </div>
+            <div class="panel-body">
+              <!-- List group -->
+              <ul class="msglist-group" style="padding:20px">
+                <!-- <li class="msglist-group-item">Cras justo odio</li> -->
+              </ul>
+              <!--message button-->
+              <form>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="message">
+                    <span class="input-group-btn">
+                      <button class="btn btn-info" type="submit">Send</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+              <!--message button end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--pannel end-->
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="javascripts/chatroomClient.js"></script> {{!--
+  <script src="javascripts/lobbyClient.js"></script> --}}
+</body>
+
+</html>
